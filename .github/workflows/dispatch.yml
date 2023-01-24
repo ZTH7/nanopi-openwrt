@@ -21,6 +21,7 @@ on:
 
 jobs:
   build:
+    permissions: write-all
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
