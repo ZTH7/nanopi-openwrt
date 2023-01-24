@@ -257,6 +257,7 @@ jobs:
           release_name: ${{env.strDate}} 自动发布
 
   generate_firmware:
+    permissions: write-all
     needs: build_packages
     if: always()
     name: Generate ${{ github.event.client_payload.device || github.event.inputs.device }} firmware
